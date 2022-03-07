@@ -1,4 +1,12 @@
 # Pontos de entrada da sua API!
+type Customers {
+    id: Int
+    name: String,
+    email: String,
+    age: Float,
+    status: String,
+    created_at: String
+}
 type Query {
     ola: String!
     horaAtual: Date!
@@ -9,4 +17,5 @@ type Query {
     usuario(id: Int): Usuario
     perfis: [Perfil]
     perfil(id: Int): Perfil
+    customers: [Customers]
 }

@@ -1,4 +1,5 @@
 const { usuarios, perfis } = require('../data/db')
+const { clientes } = require('../data/newDB')
 
 module.exports = {
     ola() {
@@ -42,6 +43,9 @@ module.exports = {
     },
     perfis() {
         return perfis
+    },
+    customers() {
+        return clientes
     },
     perfil(_, { id }) {
         const sels = perfis

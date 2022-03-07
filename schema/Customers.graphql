@@ -1,0 +1,7 @@
+type Customers {
+    name: String,
+    email: String,
+    age: Float,
+    status: String,
+    created_at: String
+}
